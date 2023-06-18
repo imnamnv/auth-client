@@ -1,0 +1,62 @@
+<mxfile host="65bd71144e">
+    <diagram id="NXxnHhTCAseJgMrDTPfX" name="Page-1">
+        <mxGraphModel dx="1190" dy="961" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="4" value="" style="edgeStyle=none;html=1;" parent="1" source="2" target="3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="&lt;font color=&quot;#000000&quot;&gt;Redux Thunk&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#FFFFFF;fillColor=#99CCFF;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="100" width="240" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="&lt;font color=&quot;#000000&quot;&gt;We can control dispatch in action creator&lt;br&gt;1. We can dispatch many actions,&lt;br&gt;2. We can dispatch any time you want&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#FFFFFF;fillColor=#99CCFF;" parent="1" vertex="1">
+                    <mxGeometry x="480" y="190" width="280" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="&lt;font color=&quot;#000000&quot;&gt;in Action creator, we can return Object or Function&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#FFFFFF;fillColor=#99CCFF;" vertex="1" parent="1">
+                    <mxGeometry x="170" y="190" width="250" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="CORS: Cross-Origin Resource Sharing" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;" vertex="1" parent="1">
+                    <mxGeometry x="140" y="370" width="650" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="&lt;font color=&quot;#000000&quot;&gt;Browser with url: a.com&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;fontSize=21;container=0;fillColor=#99CCFF;gradientColor=none;swimlaneFillColor=#99CCFF;startSize=40;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="460" width="310" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="&lt;font color=&quot;#000000&quot;&gt;JS code tries to initate request to b.com&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#FFFFFF;fillColor=#FFFF99;" vertex="1" parent="8">
+                    <mxGeometry x="20" y="50" width="270" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="&lt;font color=&quot;#000000&quot;&gt;&lt;b&gt;Browser&lt;/b&gt; says: &quot;OK, but this is different domaim, seem risky!&quot;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#FFFFFF;fillColor=#FFFF99;" vertex="1" parent="8">
+                    <mxGeometry x="20" y="100" width="270" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="&lt;font color=&quot;#000000&quot;&gt;Sorry JS script, but the server says you aren't allowed to make a request while the browser is at this domain&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#FFFFFF;fillColor=#FFFF99;" vertex="1" parent="8">
+                    <mxGeometry x="20" y="170" width="270" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;" edge="1" parent="1" target="17">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="520" y="655" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="9" value="&lt;font color=&quot;#000000&quot;&gt;Backend API: b.com/transfer&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;fontSize=21;container=0;fillColor=#99CCFF;gradientColor=none;swimlaneFillColor=#99CCFF;startSize=40;" vertex="1" parent="1">
+                    <mxGeometry x="520" y="460" width="310" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" style="edgeStyle=none;html=1;fontSize=20;" edge="1" parent="1" source="11">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="520" y="585" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="13" value="Hey API, is it OK if i'm making this request from a.com ?&lt;br&gt;(preflight request)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+                    <mxGeometry x="347.5" y="530" width="165" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="Hi Browser, Its only OK if you're making this request from b.com" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+                    <mxGeometry x="350" y="600" width="165" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="Browser sends preflight request, Postman is not browser &lt;br&gt;-&amp;gt; Postman hasn't CORS error" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="700" width="790" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
